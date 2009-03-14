@@ -11,8 +11,8 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.text.edits.ISourceModifier;
+import org.eclipse.text.edits.ReplaceEdit;
 
-import org.eclipse.text.edits.ReplaceEdit; // packageimport
 
 import java.lang.all;
 import java.util.Set;

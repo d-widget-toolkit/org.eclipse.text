@@ -11,8 +11,8 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.text.undo.IDocumentUndoListener;
+import org.eclipse.text.undo.DocumentUndoEvent;
 
-import org.eclipse.text.undo.DocumentUndoEvent; // packageimport
 
 
 import java.lang.all;

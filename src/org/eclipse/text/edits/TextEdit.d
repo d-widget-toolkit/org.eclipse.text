@@ -11,13 +11,13 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.text.edits.TextEdit;
+import org.eclipse.text.edits.MalformedTreeException;
+import org.eclipse.text.edits.TextEditCopier;
+import org.eclipse.text.edits.UndoEdit;
+import org.eclipse.text.edits.TextEditProcessor;
+import org.eclipse.text.edits.TextEditVisitor;
+import org.eclipse.text.edits.TextEditMessages;
 
-import org.eclipse.text.edits.TextEditCopier; // packageimport
-import org.eclipse.text.edits.TextEditProcessor; // packageimport
-import org.eclipse.text.edits.TextEditVisitor; // packageimport
-import org.eclipse.text.edits.UndoEdit; // packageimport
-import org.eclipse.text.edits.MalformedTreeException; // packageimport
-import org.eclipse.text.edits.TextEditMessages; // packageimport
 
 import java.lang.all;
 import java.util.Collections;

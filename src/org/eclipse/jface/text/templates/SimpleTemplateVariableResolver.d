@@ -11,25 +11,19 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.jface.text.templates.SimpleTemplateVariableResolver;
+import org.eclipse.jface.text.templates.TemplateVariable;
+import org.eclipse.jface.text.templates.TemplateTranslator;
+import org.eclipse.jface.text.templates.TemplateException;
+import org.eclipse.jface.text.templates.TemplateBuffer;
+import org.eclipse.jface.text.templates.TemplateContextType;
+import org.eclipse.jface.text.templates.DocumentTemplateContext;
+import org.eclipse.jface.text.templates.GlobalTemplateVariables;
+import org.eclipse.jface.text.templates.Template;
+import org.eclipse.jface.text.templates.TextTemplateMessages;
+import org.eclipse.jface.text.templates.TemplateVariableType;
+import org.eclipse.jface.text.templates.TemplateContext;
+import org.eclipse.jface.text.templates.TemplateVariableResolver;
 
-import org.eclipse.jface.text.templates.TemplateBuffer; // packageimport
-import org.eclipse.jface.text.templates.TemplateContext; // packageimport
-import org.eclipse.jface.text.templates.TemplateContextType; // packageimport
-import org.eclipse.jface.text.templates.Template; // packageimport
-import org.eclipse.jface.text.templates.TemplateVariable; // packageimport
-import org.eclipse.jface.text.templates.PositionBasedCompletionProposal; // packageimport
-import org.eclipse.jface.text.templates.TemplateException; // packageimport
-import org.eclipse.jface.text.templates.TemplateTranslator; // packageimport
-import org.eclipse.jface.text.templates.DocumentTemplateContext; // packageimport
-import org.eclipse.jface.text.templates.GlobalTemplateVariables; // packageimport
-import org.eclipse.jface.text.templates.InclusivePositionUpdater; // packageimport
-import org.eclipse.jface.text.templates.TemplateProposal; // packageimport
-import org.eclipse.jface.text.templates.ContextTypeRegistry; // packageimport
-import org.eclipse.jface.text.templates.JFaceTextTemplateMessages; // packageimport
-import org.eclipse.jface.text.templates.TemplateCompletionProcessor; // packageimport
-import org.eclipse.jface.text.templates.TextTemplateMessages; // packageimport
-import org.eclipse.jface.text.templates.TemplateVariableType; // packageimport
-import org.eclipse.jface.text.templates.TemplateVariableResolver; // packageimport
 
 
 import java.lang.all;

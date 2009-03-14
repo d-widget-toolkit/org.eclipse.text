@@ -11,8 +11,8 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.jface.text.ITypedRegion;
+import org.eclipse.jface.text.IRegion;
 
-import org.eclipse.jface.text.IRegion; // packageimport
 
 import java.lang.all;
 import java.util.Set;

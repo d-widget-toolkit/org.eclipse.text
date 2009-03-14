@@ -13,14 +13,14 @@
 
 
 module org.eclipse.jface.text.IDocument;
+import org.eclipse.jface.text.IRegion;
+import org.eclipse.jface.text.IDocumentListener;
+import org.eclipse.jface.text.Position;
+import org.eclipse.jface.text.IPositionUpdater;
+import org.eclipse.jface.text.IDocumentPartitioner;
+import org.eclipse.jface.text.IDocumentPartitioningListener;
+import org.eclipse.jface.text.ITypedRegion;
 
-import org.eclipse.jface.text.IDocumentPartitioningListener; // packageimport
-import org.eclipse.jface.text.IDocumentPartitioner; // packageimport
-import org.eclipse.jface.text.IRegion; // packageimport
-import org.eclipse.jface.text.IDocumentListener; // packageimport
-import org.eclipse.jface.text.Position; // packageimport
-import org.eclipse.jface.text.IPositionUpdater; // packageimport
-import org.eclipse.jface.text.ITypedRegion; // packageimport
 
 import java.lang.all;
 import java.util.Set;

@@ -11,12 +11,12 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.text.undo.DocumentUndoManager;
+import org.eclipse.text.undo.DocumentUndoManagerRegistry;
+import org.eclipse.text.undo.DocumentUndoEvent;
+import org.eclipse.text.undo.UndoMessages;
+import org.eclipse.text.undo.IDocumentUndoManager;
+import org.eclipse.text.undo.IDocumentUndoListener;
 
-import org.eclipse.text.undo.DocumentUndoManagerRegistry; // packageimport
-import org.eclipse.text.undo.DocumentUndoEvent; // packageimport
-import org.eclipse.text.undo.IDocumentUndoListener; // packageimport
-import org.eclipse.text.undo.UndoMessages; // packageimport
-import org.eclipse.text.undo.IDocumentUndoManager; // packageimport
 
 
 import java.lang.all;

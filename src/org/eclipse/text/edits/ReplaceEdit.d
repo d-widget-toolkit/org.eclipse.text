@@ -11,9 +11,9 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.text.edits.ReplaceEdit;
+import org.eclipse.text.edits.TextEditVisitor;
+import org.eclipse.text.edits.TextEdit;
 
-import org.eclipse.text.edits.TextEditVisitor; // packageimport
-import org.eclipse.text.edits.TextEdit; // packageimport
 
 
 import java.lang.all;

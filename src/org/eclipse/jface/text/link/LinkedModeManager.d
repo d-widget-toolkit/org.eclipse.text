@@ -11,16 +11,12 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.jface.text.link.LinkedModeManager;
+import org.eclipse.jface.text.link.LinkedModeModel;
+import org.eclipse.jface.text.link.LinkedPosition;
+import org.eclipse.jface.text.link.ILinkedModeListener;
+import org.eclipse.jface.text.link.LinkedPositionGroup;
+import org.eclipse.jface.text.link.InclusivePositionUpdater;
 
-import org.eclipse.jface.text.link.LinkedModeModel; // packageimport
-import org.eclipse.jface.text.link.LinkedPosition; // packageimport
-import org.eclipse.jface.text.link.ILinkedModeListener; // packageimport
-import org.eclipse.jface.text.link.TabStopIterator; // packageimport
-import org.eclipse.jface.text.link.LinkedModeUI; // packageimport
-import org.eclipse.jface.text.link.InclusivePositionUpdater; // packageimport
-import org.eclipse.jface.text.link.LinkedPositionGroup; // packageimport
-import org.eclipse.jface.text.link.LinkedPositionAnnotations; // packageimport
-import org.eclipse.jface.text.link.ProposalPosition; // packageimport
 
 
 import java.lang.all;

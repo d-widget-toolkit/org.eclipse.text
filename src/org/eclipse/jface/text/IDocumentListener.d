@@ -11,8 +11,8 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.jface.text.IDocumentListener;
+import org.eclipse.jface.text.DocumentEvent;
 
-import org.eclipse.jface.text.DocumentEvent; // packageimport
 
 import java.lang.all;
 

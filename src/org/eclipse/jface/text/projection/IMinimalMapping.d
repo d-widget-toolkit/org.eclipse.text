@@ -11,18 +11,18 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.jface.text.projection.IMinimalMapping;
+import org.eclipse.jface.text.projection.ChildDocumentManager;
+import org.eclipse.jface.text.projection.Segment;
+import org.eclipse.jface.text.projection.ChildDocument;
+import org.eclipse.jface.text.projection.ProjectionMapping;
+import org.eclipse.jface.text.projection.FragmentUpdater;
+import org.eclipse.jface.text.projection.SegmentUpdater;
+import org.eclipse.jface.text.projection.ProjectionDocumentEvent;
+import org.eclipse.jface.text.projection.ProjectionTextStore;
+import org.eclipse.jface.text.projection.ProjectionDocumentManager;
+import org.eclipse.jface.text.projection.Fragment;
+import org.eclipse.jface.text.projection.ProjectionDocument;
 
-import org.eclipse.jface.text.projection.ProjectionMapping; // packageimport
-import org.eclipse.jface.text.projection.ChildDocumentManager; // packageimport
-import org.eclipse.jface.text.projection.SegmentUpdater; // packageimport
-import org.eclipse.jface.text.projection.Segment; // packageimport
-import org.eclipse.jface.text.projection.ProjectionDocument; // packageimport
-import org.eclipse.jface.text.projection.FragmentUpdater; // packageimport
-import org.eclipse.jface.text.projection.ProjectionDocumentEvent; // packageimport
-import org.eclipse.jface.text.projection.ChildDocument; // packageimport
-import org.eclipse.jface.text.projection.Fragment; // packageimport
-import org.eclipse.jface.text.projection.ProjectionTextStore; // packageimport
-import org.eclipse.jface.text.projection.ProjectionDocumentManager; // packageimport
 
 
 import java.lang.all;

@@ -11,28 +11,28 @@
  *     Frank Benoit <benoit@tionex.de>
  *******************************************************************************/
 module org.eclipse.text.edits.InsertEdit;
+import org.eclipse.text.edits.MalformedTreeException;
+import org.eclipse.text.edits.TextEditGroup;
+import org.eclipse.text.edits.RangeMarker;
+import org.eclipse.text.edits.TextEditCopier;
+import org.eclipse.text.edits.UndoEdit;
+import org.eclipse.text.edits.MoveSourceEdit;
+import org.eclipse.text.edits.MoveTargetEdit;
+import org.eclipse.text.edits.CopyTargetEdit;
+import org.eclipse.text.edits.TextEditProcessor;
+import org.eclipse.text.edits.TextEditVisitor;
+import org.eclipse.text.edits.TextEdit;
+import org.eclipse.text.edits.TreeIterationInfo;
+import org.eclipse.text.edits.TextEditMessages;
+import org.eclipse.text.edits.CopySourceEdit;
+import org.eclipse.text.edits.ReplaceEdit;
+import org.eclipse.text.edits.MultiTextEdit;
+import org.eclipse.text.edits.EditDocument;
+import org.eclipse.text.edits.UndoCollector;
+import org.eclipse.text.edits.ISourceModifier;
+import org.eclipse.text.edits.CopyingRangeMarker;
+import org.eclipse.text.edits.DeleteEdit;
 
-import org.eclipse.text.edits.MultiTextEdit; // packageimport
-import org.eclipse.text.edits.CopySourceEdit; // packageimport
-import org.eclipse.text.edits.MoveSourceEdit; // packageimport
-import org.eclipse.text.edits.CopyingRangeMarker; // packageimport
-import org.eclipse.text.edits.ReplaceEdit; // packageimport
-import org.eclipse.text.edits.EditDocument; // packageimport
-import org.eclipse.text.edits.UndoCollector; // packageimport
-import org.eclipse.text.edits.DeleteEdit; // packageimport
-import org.eclipse.text.edits.MoveTargetEdit; // packageimport
-import org.eclipse.text.edits.CopyTargetEdit; // packageimport
-import org.eclipse.text.edits.TextEditCopier; // packageimport
-import org.eclipse.text.edits.ISourceModifier; // packageimport
-import org.eclipse.text.edits.TextEditMessages; // packageimport
-import org.eclipse.text.edits.TextEditProcessor; // packageimport
-import org.eclipse.text.edits.MalformedTreeException; // packageimport
-import org.eclipse.text.edits.TreeIterationInfo; // packageimport
-import org.eclipse.text.edits.TextEditVisitor; // packageimport
-import org.eclipse.text.edits.TextEditGroup; // packageimport
-import org.eclipse.text.edits.TextEdit; // packageimport
-import org.eclipse.text.edits.RangeMarker; // packageimport
-import org.eclipse.text.edits.UndoEdit; // packageimport
 
 
 import java.lang.all;
