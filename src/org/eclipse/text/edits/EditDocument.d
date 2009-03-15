@@ -109,8 +109,8 @@ class EditDocument : IDocument {
         return fBuffer.toString();
     }
 
-    public String get(int offset, int length_)  {
-        return fBuffer.slice()[offset .. offset + length_ ];
+    public String get(int offset, int length)  {
+        return fBuffer.substring(offset, offset + length);
     }
 
     public char getChar(int offset)  {
@@ -218,8 +218,7 @@ class EditDocument : IDocument {
     }
 
     public void replace(int offset, int length, String text)  {
-        fBuffer.select(offset, length );
-        fBuffer.replace(text);
+        fBuffer.replace(offset, offset + length, text);
     }
 
     public int search(int startOffset, String findString, bool forwardSearch, bool caseSensitive, bool wholeWord)  {

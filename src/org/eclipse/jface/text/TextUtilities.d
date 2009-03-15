@@ -44,7 +44,6 @@ import org.eclipse.jface.text.ILineTracker;
 import org.eclipse.jface.text.ListLineTracker;
 import org.eclipse.jface.text.IDocumentInformationMapping;
 import org.eclipse.jface.text.IDocumentRewriteSessionListener;
-import org.eclipse.jface.text.Assert;
 import org.eclipse.jface.text.AbstractLineTracker;
 import org.eclipse.jface.text.DefaultLineTracker;
 import org.eclipse.jface.text.BadPositionCategoryException;
@@ -284,10 +283,8 @@ public class TextUtilities {
             // event is left from merged event
             } else if (eventOffset + eventLength < offset) {
                 final String string= document.get(eventOffset + eventLength, offset - (eventOffset + eventLength));
-                text.select(0,0);
-                text.replace(string);
-                text.select(0,0);
-                text.replace(eventText);
+                text.insert(0, string);
+                text.insert(0, eventText);
 
                 length= offset + length - eventOffset;
                 offset= eventOffset;
@@ -296,8 +293,7 @@ public class TextUtilities {
             } else {
                 final int start= Math.max(0, eventOffset - offset);
                 final int end= Math.min(text.length(), eventLength + eventOffset - offset);
-                text.select(start, end);
-                text.replace(eventText);
+                text.replace(start, end, eventText);
 
                 offset= Math.min(offset, eventOffset);
                 final int totalDelta= delta + eventText.length - eventLength;

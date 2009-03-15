@@ -46,7 +46,6 @@ import org.eclipse.jface.text.ILineTracker;
 import org.eclipse.jface.text.ListLineTracker;
 import org.eclipse.jface.text.IDocumentInformationMapping;
 import org.eclipse.jface.text.IDocumentRewriteSessionListener;
-import org.eclipse.jface.text.Assert;
 import org.eclipse.jface.text.AbstractLineTracker;
 import org.eclipse.jface.text.DefaultLineTracker;
 import org.eclipse.jface.text.BadPositionCategoryException;

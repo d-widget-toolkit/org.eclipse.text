@@ -318,9 +318,9 @@ public class DocumentUndoManager : IDocumentUndoManager {
 
         protected void updateTextChange() {
             fText= fDocumentUndoManager.fTextBuffer.toString();
-            fDocumentUndoManager.fTextBuffer.clear();
+            fDocumentUndoManager.fTextBuffer.setLength(0);
             fPreservedText= fDocumentUndoManager.fPreservedTextBuffer.toString();
-            fDocumentUndoManager.fPreservedTextBuffer.clear();
+            fDocumentUndoManager.fPreservedTextBuffer.setLength(0);
         }
 
         /**
@@ -1126,8 +1126,7 @@ public class DocumentUndoManager : IDocumentUndoManager {
                         // repeated backspace
 
                         // insert in buffer and extend edit range
-                        fPreservedTextBuffer.select(0,0);
-                        fPreservedTextBuffer.replace(replacedText);
+                        fPreservedTextBuffer.insert(0,replacedText);
                         fCurrent.fStart= modelStart;
 
                     } else {
@@ -1236,8 +1235,8 @@ public class DocumentUndoManager : IDocumentUndoManager {
 
         fCurrent= null;
         fPreviousDelete= null;
-        fTextBuffer.clear();
-        fPreservedTextBuffer.clear();
+        fTextBuffer=null;
+        fPreservedTextBuffer=null;
 
         disposeUndoHistory();
     }
