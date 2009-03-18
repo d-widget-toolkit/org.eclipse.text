@@ -26,7 +26,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Set;
-import tango.text.convert.Format;
 
 import org.eclipse.core.runtime.Assert;
 import org.eclipse.jface.text.BadLocationException;

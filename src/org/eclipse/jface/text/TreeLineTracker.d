@@ -75,7 +75,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Set;
-import tango.text.convert.Format;
 import tango.core.Exception;
 
 import org.eclipse.core.runtime.Assert;

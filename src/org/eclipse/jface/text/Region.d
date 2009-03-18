@@ -72,7 +72,6 @@ import org.eclipse.jface.text.TreeLineTracker;
 
 import java.lang.all;
 import java.util.Set;
-import tango.text.convert.Format;
 
 
 /**
