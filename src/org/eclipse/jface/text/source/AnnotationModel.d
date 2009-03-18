@@ -30,8 +30,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.IdentityHashMap;
-import tango.core.Exception;
-import java.lang.JThread;
+import java.lang.Thread;
 
 import org.eclipse.core.runtime.Assert;
 import org.eclipse.jface.text.AbstractDocument;
@@ -690,7 +689,7 @@ public class AnnotationModel : IAnnotationModel, IAnnotationModelExtension, IAnn
                 removeAnnotations(deleted, false, false);
                 synchronized (getLockObject()) {
                     if (fModelEvent !is null)
-                        (new JThread ( &fireModelChanged )).start();
+                        (new Thread ( &fireModelChanged )).start();
                 }
             } else
                 removeAnnotations(deleted, fireModelChanged_, false);
