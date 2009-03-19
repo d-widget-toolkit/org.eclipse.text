@@ -1310,7 +1310,7 @@ abstract class TreeLineTracker : ILineTracker {
         try {
             replace(0, 0, text);
         } catch (BadLocationException x) {
-            throw new AssertException(__FILE__,__LINE__);
+            throw new InternalError(__FILE__,__LINE__);
         }
     }
 
@@ -1392,7 +1392,7 @@ abstract class TreeLineTracker : ILineTracker {
         try {
             checkTreeOffsets(nodeByOffset(0), [0, 0], null);
         } catch (BadLocationException x) {
-            throw new AssertException(__FILE__,__LINE__);
+            throw new InternalError(__FILE__,__LINE__);
         }
     }
 
