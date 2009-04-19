@@ -30,8 +30,8 @@ import org.eclipse.jface.text.templates.TemplateVariableResolver;
 import java.lang.all;
 import java.util.Set;
 
-// import com.ibm.icu.text.DateFormat;
-// import com.ibm.icu.util.Calendar;
+import com.ibm.icu.text.DateFormat;
+import com.ibm.icu.util.Calendar;
 
 /**
  * Global variables which are available in any context.
@@ -150,9 +150,7 @@ public class GlobalTemplateVariables {
             super("year", TextTemplateMessages.getString("GlobalVariables.variable.description.year")); //$NON-NLS-1$ //$NON-NLS-2$
         }
         protected String resolve(TemplateContext context) {
-            implMissing(__FILE__,__LINE__);
-            return null;
-            //return Integer.toString(Calendar.getInstance().get(Calendar.YEAR));
+            return Integer.toString(Calendar.getInstance().get(Calendar.YEAR));
         }
     }
 
@@ -171,9 +169,7 @@ public class GlobalTemplateVariables {
          * {@inheritDoc}
          */
         protected String resolve(TemplateContext context) {
-            implMissing(__FILE__,__LINE__);
-            return null;
-            //return DateFormat.getTimeInstance().format(new java.util.Date());
+            return DateFormat.getTimeInstance().format(new java.util.Date());
         }
     }
 
